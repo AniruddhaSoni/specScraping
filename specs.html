@@ -1,0 +1,120 @@
+<html><head><meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" rel="stylesheet"/>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .specs {
+    margin: 1rem none;
+    min-height: 30%;
+    width: auto;
+    border: 5px solid lightgray;
+    border-radius: 15px;
+  }
+  .specs_container {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-items: start;
+    row-gap: 1rem;
+  }
+  .specs_box {
+    display: flex;
+    align-self: flex-start;
+  }
+  .specs_box h3 {
+    font-weight: 400;
+  }
+  .specs_box span {
+    font-size: 0.8rem;
+  }
+  .fas {
+    padding: 0 1rem;
+    align-self: initial;
+  }
+
+  @media (max-width: 520px) {
+    .specs_container {
+      grid-template-columns: repeat(2, auto);
+      row-gap: 2rem;
+    }
+    .specs_heading {
+      font-size: 1rem;
+    }
+  }
+  @media (max-width: 400px) {
+    .specs_container {
+      padding: 0;
+    }
+    .specs {
+      border: none;
+    }
+  }
+  @media (max-width: 300px) {
+    .specs_container {
+      grid-template-columns: 1fr;
+      row-gap: 2rem;
+    }
+  }
+</style>
+<title>Specification</title>
+<main class="specs">
+<section class="specs_container">
+        <div class="specs_box processor">
+        <i class="fas fa-memory"></i>
+        <div class="specs_details">
+            <h3 class="specs_heading">RAM</h3>
+            <span class="key">6 GB</span>
+        </div>
+        </div>
+    
+        <div class="specs_box processor">
+        <i class="fas fa-microchip"></i>
+        <div class="specs_details">
+            <h3 class="specs_heading">Processor</h3>
+            <span class="key">Qualcomm Snapdragon 730G</span>
+        </div>
+        </div>
+    
+        <div class="specs_box processor">
+        <i class="fas fa-camera"></i>
+        <div class="specs_details">
+            <h3 class="specs_heading">Rear Camera</h3>
+            <span class="key">108 MP + 8 MP + 2 MP + 2 MP</span>
+        </div>
+        </div>
+    
+        <div class="specs_box processor">
+        <i class="fas fa-portrait"></i>
+        <div class="specs_details">
+            <h3 class="specs_heading">Front Camera</h3>
+            <span class="key">32 MP</span>
+        </div>
+        </div>
+    
+        <div class="specs_box processor">
+        <i class="fas fa-battery-full"></i>
+        <div class="specs_details">
+            <h3 class="specs_heading">Battery</h3>
+            <span class="key">4500 mAh</span>
+        </div>
+        </div>
+    
+        <div class="specs_box processor">
+        <i class="fas fa-tv"></i>
+        <div class="specs_details">
+            <h3 class="specs_heading">Display</h3>
+            <span class="key">6.4 inches</span>
+        </div>
+        </div>
+    </section>
+</main>
+</head></html>

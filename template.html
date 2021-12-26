@@ -1,0 +1,77 @@
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+  integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+  crossorigin="anonymous"
+/>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .specs {
+    margin: 1rem none;
+    min-height: 30%;
+    width: auto;
+    border: 5px solid lightgray;
+    border-radius: 15px;
+  }
+  .specs_container {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-items: start;
+    row-gap: 1rem;
+  }
+  .specs_box {
+    display: flex;
+    align-self: flex-start;
+  }
+  .specs_box h3 {
+    font-weight: 400;
+  }
+  .specs_box span {
+    font-size: 0.8rem;
+  }
+  .fas {
+    padding: 0 1rem;
+    align-self: initial;
+  }
+
+  @media (max-width: 520px) {
+    .specs_container {
+      grid-template-columns: repeat(2, auto);
+      row-gap: 2rem;
+    }
+    .specs_heading {
+      font-size: 1rem;
+    }
+  }
+  @media (max-width: 400px) {
+    .specs_container {
+      padding: 0;
+    }
+    .specs {
+      border: none;
+    }
+  }
+  @media (max-width: 300px) {
+    .specs_container {
+      grid-template-columns: 1fr;
+      row-gap: 2rem;
+    }
+  }
+</style>
+<title>Specification</title>
+
+<main class="specs">
+  <section class="specs_container"></section>
+</main>
